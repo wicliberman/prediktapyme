@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto PrediktaPyme</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f7f9;
+        }
+        header {
+            background-color: #1e40af;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-content {
+            flex: 2;
+            min-width: 300px;
+        }
+        .sidebar {
+            flex: 1;
+            min-width: 300px;
+        }
+        .presentation, .documents {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #1e40af;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .slide {
+            margin-bottom: 30px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .slide-header {
+            background-color: #1e40af;
+            color: white;
+            padding: 10px 15px;
+        }
+        .slide-content {
+            padding: 15px;
+        }
+        .slide-title {
+            margin: 0;
+            font-size: 18px;
+        }
+        .slide-subtitle {
+            color: #3b82f6;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .doc-item {
+            display: flex;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            align-items: flex-start;
+            transition: background-color 0.2s;
+        }
+        .doc-item:hover {
+            background-color: #f1f5f9;
+        }
+        .doc-icon {
+            background-color: #dbeafe;
+            color: #1e40af;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .doc-details {
+            flex-grow: 1;
+        }
+        .doc-title {
+            font-weight: 600;
+            margin: 0 0 5px 0;
+        }
+        .doc-desc {
+            font-size: 14px;
+            color: #64748b;
+            margin: 0 0 10px 0;
+        }
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            background-color: #1e40af;
+            color: white;
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background-color 0.2s;
+        }
+        .btn-download:hover {
+            background-color: #1e3a8a;
+        }
+        .btn-download svg {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+        }
+        .project-info {
+            background-color: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .info-row {
+            margin-bottom: 5px;
+        }
+        .info-row span {
+            font-weight: 600;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .main-content, .sidebar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Proyecto PrediktaPyme</h1>
+        <p>Desarrollo Tecnológico en PYME como pilar para su maduración organizacional</p>
+        <p>Fondo de Innovación para el Desarrollo del talento Pyme 2025 - OTIC CCHC</p>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <section class="presentation">
+                <h2>Presentación del Proyecto</h2>
+                
+                <!-- Diapositiva 1: Información del Proyecto -->
+                <div class="slide">
+                    <div class="slide-header">
+                        <h3 class="slide-title">Información General</h3>
+                    </div>
+                    <div class="slide-content">
+                        <div class="project-info">
+                            <div class="info-row"><span>Consultora:</span> Predikta</div>
+                            <div class="info-row"><span>Website:</span> <a href="https://www.predikta.pro/" target="_blank">https://www.predikta.pro/</a></div>
+                            <div class="info-row"><span>Nombre del proyecto:</span> PrediktaPyme</div>
+                            <div class="info-row"><span>Monto solicitado:</span> $43.500.000</div>
+                            <div class="info-row"><span>Duración:</span> 12 meses</div>
+                            <div class="info-row"><span>Postulante:</span> Sammy Liberman</div>
+                            <div class="info-row"><span>Email:</span> slibermany@gmail.com</div>
+                            <div class="info-row"><span>Teléfono:</span> +56972157474</div>
+                            <div class="info-row"><span>Fecha:</span> 8 de mayo, 2025</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Diapositiva 2: Justificación y Contexto -->
+                <div class="slide">
+                    <div class="slide-header">
+                        <h3 class="slide-title">Justificación y Contexto</h3>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-subtitle">¿Cuáles son los antecedentes que justifican la propuesta del proyecto?</div>
+                        <p>
+                            Las pymes enfrentan desafíos estructurales en su adopción tecnológica, incorporación de inteligencia de negocio y compromiso con la sostenibilidad, factores esenciales para competir en un entorno empresarial dinámico y cambiante. A pesar de múltiples esfuerzos, la mayoría de las pymes no conoce con precisión sus brechas en estas áreas, lo que limita la efectividad de las acciones de apoyo. Según el BID (2024), más del 70% de las pymes en América Latina se encuentra en niveles básicos de uso de datos y digitalización, y gran parte de ellas carece de capacidades para transformar la información en decisiones estratégicas. Esta falta de diagnóstico limita una asignación eficiente de recursos y esfuerzos de capacitación, al aplicarse soluciones genéricas a problemas diversos. Por tanto, se vuelve urgente contar con mecanismos que permitan identificar con claridad los niveles reales de madurez en estos tres vectores críticos, y así avanzar hacia un desarrollo focalizado, medible y sostenible.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Diapositiva 3: Propósito -->
+                <div class="slide">
+                    <div class="slide-header">
+                        <h3 class="slide-title">Propósito del Proyecto</h3>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-subtitle">¿Cuál es el objetivo del proyecto, cómo y a quienes impactará?</div>
+                        <p>
+                            El proyecto busca fortalecer la competitividad de las pymes mediante la identificación de brechas en tres dimensiones clave: adopción tecnológica, inteligencia de negocio y sostenibilidad. A través de un sistema de análisis y monitoreo, permite mejorar la Detección de Necesidades de Capacitación (DNC), entregando información estratégica para que las propias empresas, o instituciones que las apoyan, definan acciones formativas más pertinentes. Impactará a pymes de diversos sectores, transformándose en un insumo para asignar recursos de forma más eficiente, identificar segmentos líderes, diseñar planes de mejora continua y focalizar políticas públicas en áreas prioritarias, contribuyendo a un desarrollo más sostenible y alineado con los desafíos de la transformación digital.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Diapositiva 4: Solución Propuesta -->
+                <div class="slide">
+                    <div class="slide-header">
+                        <h3 class="slide-title">Solución Propuesta</h3>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-subtitle">¿Cuál es la solución que está proponiendo con el desarrollo de este proyecto?</div>
+                        <p>
+                            El proyecto propone una plataforma integral que combina un módulo de diagnóstico y otro de seguimiento para evaluar y monitorear el nivel de adopción tecnológica, inteligencia de negocio y sostenibilidad en pymes. El módulo de diagnóstico utiliza modelos de análisis para identificar el riesgo de rezago en cada dimensión, clasificando a las empresas según su nivel de vulnerabilidad y detectando brechas específicas. Esto permite personalizar estrategias de intervención y orientar la toma de decisiones. El módulo de seguimiento permite monitorear el avance de cada pyme a lo largo del tiempo, registrando la evolución de las acciones implementadas. La solución entrega información objetiva, útil y procesable, promoviendo una transformación empresarial más informada, sostenible y ajustada a la realidad de cada organización.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Diapositiva 5: Nivel de Madurez Tecnológica -->
+                <div class="slide">
+                    <div class="slide-header">
+                        <h3 class="slide-title">Nivel de Madurez Tecnológica (TRL)</h3>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-subtitle">¿En qué nivel se encuentra la solución actualmente?</div>
+                        <p>
+                            Según la escala TRL, la solución se encuentra en el nivel TRL 2. Se han desarrollado principios conceptuales para diagnosticar brechas en transformación digital, inteligencia de negocio y sostenibilidad en pymes, en el contexto de una investigación aplicada de corte académico liderada por Sammy Liberman. Esta fase incluyó una revisión teórica y el diseño preliminar de modelos de análisis y estructuras funcionales. Se realizaron aproximaciones exploratorias con pymes del sector gastronomia, hoteleria y turismo en general, de la comuna de San José de Maipo, lo que permitió recoger insumos relevantes y ajustar la lógica de segmentación. Sin embargo, aún no se han realizado pruebas en condiciones controladas ni se ha construido un prototipo funcional. El proyecto permanece en etapa de prueba de concepto, con miras a avanzar hacia una solución transversal adaptable a distintos perfiles de pymes.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Diapositiva 6: Metodología -->
+                <div class="slide">
+                    <div class="slide-header">
+                        <h3 class="slide-title">Metodología</h3>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-subtitle">Describa el proceso de diseño y desarrollo del proyecto</div>
+                        <p>
+                            El proyecto iniciará con el desarrollo de la plataforma, utilizando tecnologías como HTML, JavaScript y Python para construir una solución web accesible, modular y escalable. Se diseñará una arquitectura compuesta por un módulo de diagnóstico predictivo, que identificará brechas en adopción tecnológica, inteligencia de negocio y sostenibilidad, y un módulo de monitoreo para visualizar avances en el tiempo. El sistema contará con una interfaz con visualizaciones dinámicas y almacenamiento de datos. Una vez implementado el desarrollo base, se realizará una validación técnica en colaboración con pymes de un sector productivo por confirmar (ejemplo: construcción, proveedores de insumos, servicios técnicos, subcontratistas, etc). Esta etapa incluirá pruebas de funcionamiento en contexto real, evaluación del modelo y análisis de la experiencia de usuario. Los resultados permitirán ajustar la funcionalidad, mejorar la usabilidad y preparar la solución para su pilotaje formal y escalamiento.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Diapositiva 7: Plan de Trabajo -->
+                <div class="slide">
+                    <div class="slide-header">
+                        <h3 class="slide-title">Plan de Trabajo</h3>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-subtitle">Describa las fases del proyecto y su duración estimada</div>
+                        <div style="white-space: pre-line;">
+                            El proyecto se estructurará en cuatro fases durante 12 meses:
+
+Fase 1 (3 meses): Diseño y desarrollo inicial
+- Levantamiento de requerimientos, diseño de arquitectura técnica y desarrollo del prototipo con HTML, JS y Python.
+- Entregable: Plataforma funcional inicial.
+- Hito: Plataforma básica funcional.
+
+Fase 2 (3 meses): Validación técnica
+- Pruebas con pymes de un sector por confirmar, evaluando desempeño, usabilidad y precisión del modelo.
+- Entregable: Informe de validación y ajustes realizados.
+- Hito: Validación técnica exitosa.
+
+Fase 3 (3 meses): Optimización
+- Ajustes de algoritmos, mejoras técnicas y preparación de la documentación para el pilotaje.
+- Entregable: Plataforma optimizada y documentación técnica.
+- Hito: Plataforma lista para pilotaje.
+
+Fase 4 (3 meses): Pilotaje y evaluación
+- Implementación del pilotaje en condiciones reales y evaluación de los resultados obtenidos.
+- Entregables: Informe de evaluación y estrategia de escalabilidad.
+- Hito: Evaluación final completada.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Diapositiva 8: Resultados Esperados -->
+                <div class="slide">
+                    <div class="slide-header">
+                        <h3 class="slide-title">Resultados Esperados</h3>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-subtitle">¿Cuáles son los productos e indicadores clave (KPI) para medir el éxito del proyecto?</div>
+                        <div style="white-space: pre-line;">
+                            Los productos clave son: (1) plataforma digital PredictaPyme operativa con módulos de diagnóstico y monitoreo, (2) modelo predictivo validado para identificación de brechas en pymes, y (3) documentación técnica y plan de escalamiento. 
+
+Se espera que la plataforma mantenga un uptime superior al 90% durante su ejecución. En cuanto a la usabilidad, al menos el 80% de los usuarios deberán manifestar satisfacción con la experiencia, según encuestas aplicadas tras la validación. 
+
+Además, se proyecta que al menos el 20% de las pymes participantes declaren su intención de implementar esfuerzos concretos por disminuir brechas en alguna dimensión evaluada (digital, inteligencia de negocio o sostenibilidad) en los próximos 12 meses. 
+
+Como parte de la proyección a largo plazo, se espera que al menos una entidad externa manifieste interés en escalar el modelo a otro sector o región. Finalmente, se documentarán ajustes implementados en la plataforma a partir de la retroalimentación recogida en terreno.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Diapositiva 9: Sostenibilidad -->
+                <div class="slide">
+                    <div class="slide-header">
+                        <h3 class="slide-title">Sostenibilidad</h3>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-subtitle">¿Qué estrategia se implementará para proyectar la continuidad, escalabilidad y sostenibilidad de la solución a largo plazo?</div>
+                        <p>
+                            La estrategia para proyectar la continuidad, escalabilidad y sostenibilidad de PredictaPyme se basa en tres pilares clave: modularidad, validación continua y colaboración estratégica. La plataforma será desarrollada con una arquitectura modular, lo que permitirá su adaptación flexible a diferentes sectores y territorios, asegurando escalabilidad a medida que se expanden las necesidades del mercado. La fase de validación técnica, mediante pruebas con pymes, garantizará que el modelo predictivo sea preciso y útil, mientras que el monitoreo constante de la evolución de las brechas permitirá ajustes rápidos y relevantes. Además, se contempla una estrategia de crecimiento sustentada en la colaboración con entidades públicas y privadas, lo que facilitará su adopción y expansión, asegurando su sostenibilidad a largo plazo.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Diapositiva 10: Recursos y Equipos -->
+                <div class="slide">
+                    <div class="slide-header">
+                        <h3 class="slide-title">Recursos y Equipos</h3>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-subtitle">¿Quiénes conforman el equipo de trabajo y qué roles desempeñará cada miembro?</div>
+                        <div style="white-space: pre-line;">
+                            - Líder de Proyecto - Sammy Liberman: Gestión general, coordinación de tareas y supervisión de plazos y entregables.
+- Coordinadora del Proyecto - Paulina García: Coordinación diaria de actividades, enlace entre el equipo y aliados estratégicos.
+- Desarrolladores Web: Diseño y desarrollo de la plataforma usando HTML, JavaScript y Python, asegurando su funcionalidad y usabilidad.
+- Data Scientist / Analista Predictivo: Desarrollo y ajuste del modelo predictivo, garantizando su precisión en la identificación de brechas.
+- Especialista en UX/UI: Diseño de una interfaz amigable y accesible, optimizando la experiencia del usuario.
+- Consultores en Sostenibilidad y Transformación Digital: Asesoramiento en adopción tecnológica y sostenibilidad de las pymes.
+- Aliados Estratégicos: Colaboración en la validación técnica y expansión, incluyendo pymes y entidades públicas o privadas que apoyen el proyecto.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Diapositiva 11: Aliados Estratégicos -->
+                <div class="slide">
+                    <div class="slide-header">
+                        <h3 class="slide-title">Aliados Estratégicos</h3>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-subtitle">¿Cuáles son los aliados estratégicos que apoyarán el proyecto y cuál será su contribución?</div>
+                        <p>
+                            Se espera generar alianzas estratégicas con entidades públicas, que impulsen la adopción de PredictaPyme entre las pymes mediante programas de apoyo y financiamiento. También se proyecta vinculación con cámaras de comercio y asociaciones empresariales para facilitar el acceso a redes empresariales más amplias. Se buscará la colaboración de consultoras especializadas en transformación digital y sostenibilidad, quienes contribuirán con su experiencia en la validación del modelo y en el diseño de protocolos de intervención. Finalmente, se establecerán alianzas con pymes participantes, que actuarán como casos piloto para probar la plataforma y entregar retroalimentación clave para su mejora.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Diapositiva 12: Presupuesto -->
+                <div class="slide">
+                    <div class="slide-header">
+                        <h3 class="slide-title">Presupuesto</h3>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-subtitle">Describa en detalle el presupuesto solicitado considerando recursos tecnológicos, humanos y financieros</div>
+                        <div style="white-space: pre-line;">
+                            El presupuesto total del proyecto se distribuye en tres categorías principales:
+
+1. Recursos Humanos (RRHH) - 70%: Incluye la dirección del proyecto, coordinación, desarrollo web, data scientist, especialista en UX/UI y consultores en sostenibilidad y transformación digital. Asegura la ejecución de actividades clave y el desarrollo de la plataforma.
+
+2. Operación - 20%: Cubre los costos de servicios tecnológicos como alojamiento en la nube, licencias de software, herramientas de desarrollo, análisis de datos y pruebas de validación con pymes. También incluye mejoras de la plataforma, arriendo de oficina, soporte técnico, difusión y marketing.
+
+3. Administración - 10%: Incluye costos de gestión general, insumos, actividades de difusión, coordinación con aliados estratégicos y servicio de contabilidad.
+
+Este presupuesto garantiza el cumplimiento de los objetivos técnicos, operativos y de escalabilidad durante los 12 meses del proyecto.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Diapositiva 13: Plan de Difusión -->
+                <div class="slide">
+                    <div class="slide-header">
+                        <h3 class="slide-title">Plan de Difusión</h3>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-subtitle">¿Cómo se socializarán los aprendizajes obtenidos del proyecto? Indique estrategias de divulgación y comunicación</div>
+                        <p>
+                            Los aprendizajes obtenidos del proyecto serán socializados mediante diversas estrategias de divulgación y comunicación. Se organizarán webinars dirigidos a pymes, entidades públicas y actores del ecosistema empresarial para presentar los resultados del pilotaje, mostrar el funcionamiento de la plataforma y compartir experiencias. Estos espacios facilitarán el intercambio de aprendizajes y buenas prácticas. Además, se utilizarán redes sociales como por ejemplo, Instagram o YouTube para difundir contenidos clave en formatos accesibles (videos, infografías, testimonios), ampliando el alcance y promoviendo la adopción de la solución. También se podrán desarrollar estudios de caso que documenten experiencias destacadas de pymes participantes, mostrando cómo PredictaPyme contribuye al cierre de brechas tecnológicas, de negocio y sostenibilidad. Estos materiales estarán disponibles en plataformas digitales y servirán como referencia para nuevas organizaciones interesadas en implementar la solución.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <div class="sidebar">
+            <section class="documents">
+                <h2>Documentos Anexos</h2>
+                
+                <!-- Anexo 1 -->
+                <div class="doc-item">
+                    <div class="doc-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <div class="doc-details">
+                        <h4 class="doc-title">Anexo 1: Declaración Jurada</h4>
+                        <p class="doc-desc">Documento firmado por Sammy Liberman que certifica que WIC SpA no tiene conflictos de interés con OTIC CCHC</p>
+                        <a href="anexo1-declaracion-jurada.pdf" download class="btn-download">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Descargar PDF
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Anexo 2 -->
+                <div class="doc-item">
+                    <div class="doc-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <div class="doc-details">
+                        <h4 class="doc-title">Anexo 2: Declaración de Integridad</h4>
+                        <p class="doc-desc">Documento que acredita cumplimiento de la Ley 20.393 sobre Responsabilidad Penal de Personas Jurídicas</p>
+                        <a href="anexo2-declaracion-integridad.pdf" download class="btn-download">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Descargar PDF
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Anexo 3 -->
+                <div class="doc-item">
+                    <div class="doc-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <div class="doc-details">
+                        <h4 class="doc-title">Anexo 3: Certificado de Vigencia</h4>
+                        <p class="doc-desc">Certificado del Registro de Empresas que confirma vigencia de WIC SpA (RUT: 77.609.243-6)</p>
+                        <a href="anexo3-certificado-vigencia.pdf" download class="btn-download">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Descargar PDF
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Anexo 4 -->
+                <div class="doc-item">
+                    <div class="doc-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <div class="doc-details">
+                        <h4 class="doc-title">Anexo 4: Dicom Empresa</h4>
+                        <p class="doc-desc">Reporte Equifax que muestra riesgo comercial bajo (999) y confirma categoría de microempresa</p>
+                        <a href="anexo4-dicom-empresa.pdf" download class="btn-download">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Descargar PDF
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer style="text-align: center; margin-top: 20px; padding: 10px; color: #64748b; font-size: 14px;">
+        © 2025 Predikta - Todos los derechos reservados
+    </footer>
+</body>
+</html>
